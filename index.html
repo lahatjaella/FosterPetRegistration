@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="milestone" content="Foster-Pet">
+    <script src="https://tinyurl.com/2p9w5adj"></script>
+    <title>Foster A Pet</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <header>
+        <h1>Sign Up to Foster a Pet</h1>
+        <table>
+            <!-- Adding caption for better accessibility -->
+            <caption>Available Pets for Foster Care</caption>
+            <thead>
+                <tr>
+                    <!-- Using <th> for headers and adding scope="col" for better screen reader support -->
+                    <th scope="col">Name</th>
+                    <th scope="col">Age</th>
+                    <th scope="col">Breed</th>
+                    <th scope="col">Picture</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Benny</td>
+                    <td>2</td>
+                    <td>Golden Retriever</td>
+                    <!-- Adding alt text to images for screen readers -->
+                    <td><img src="https://www.vidavetcare.com/wp-content/uploads/sites/234/2022/04/golden-retriever-dog-breed-info.jpeg" alt="Golden Retriever named Benny"></td>
+                </tr>
+                <tr>
+                    <td>Felix</td>
+                    <td>5</td>
+                    <td>Orange Tabby</td>
+                    <td><img src="https://images.squarespace-cdn.com/content/v1/5c6494bbf4e5310e57b3de34/1623557067947-PN4CQHL8B84UEXR4K9CP/Capture.PNG?format=1500w" alt="Orange Tabby cat named Felix"></td>
+                </tr>
+                <tr>
+                    <td>Cooper</td>
+                    <td>8</td>
+                    <td>German Shepherd</td>
+                    <td><img src="https://image.petmd.com/files/inline-images/german-shepherd-3.jpg?VersionId=QrldSoaj4srcfCInIahiKcoLSh5D0gh8" alt="German Shepherd named Cooper"></td>
+                </tr>
+                <tr>
+                    <td>Anna</td>
+                    <td>3</td>
+                    <td>Long-Haired Dachshund</td>
+                    <td><img src="https://www.marebelladachshunds.com/uploads/3/4/4/6/34460326/published/img-8761.jpg?1712116501" alt="Long-Haired Dachshund named Anna"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Adding alt text to images for screen readers -->
+        <img src="assets/dog.png" alt="Cute Dog Looking Over Form" width="40%">
+    </header>
+
+    <form>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" placeholder="Jane Doe" name="name" required>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="example@domain.com" name="email" required>
+
+        <label for="pw">Password:</label>
+        <input type="password" id="pw" name="password" required>
+
+        <label for="num-pets">Number of Pets:</label>
+        <input type="number" min="0" id="num-pets" name="num-pets" required>
+
+        <h4>Have you ever fostered before?</h4>
+        <label for="yes">
+            <input type="radio" id="yes" name="prev-experience" value="yes">Yes</input>
+        </label>
+        <label for="no">
+            <input type="radio" id="no" name="prev-experience" value="no">No</input>
+        </label>
+
+        <h4>Which of these apply to your home?</h4>
+        <label for="apartment">Apartment</label>
+        <input type="checkbox" id="apartment" name="apartment">
+
+        <label for="children">Children</label>
+        <input type="checkbox" id="children" name="children">
+
+        <label for="yard">Yard</label>
+        <input type="checkbox" id="yard" name="yard">
+
+        <input type="submit" value="Sign Up">
+    </form>
+</body>
+</html>
